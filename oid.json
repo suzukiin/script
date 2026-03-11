@@ -1,0 +1,85 @@
+{
+    "equipments": [
+        {
+            "name": "AVG",
+            "model": "AVG050",
+            "brand": "Rohde & Schwarz",
+            "ip": "192.168.58.11",
+            "community": "public",
+            "OIDS": [
+                {
+                    "oid": "1.3.6.1.4.1.2566.127.1.3.236.23.2.2.1.1.2.0",
+                    "name": "status receptor",
+                    "type": "boolean",
+                    "enum": {
+                        "1": "Not Available",
+                        "2": "Inactive",
+                        "3": "Ok",
+                        "4": "Warning",
+                        "5": "Error"
+                    },
+                    "mask": null,
+                    "description": "Indica o status do receptor",
+                    "topic": "status_receptor"
+                },
+                {
+                    "oid": "1.3.6.1.4.1.2566.127.1.3.236.23.2.2.1.2.8.0",
+                    "name": "C/N da recepção",
+                    "type": "numeric",
+                    "mask": 0.1,
+                    "description": "Indica o nivel do C/N da recepção",
+                    "unit": "dB",
+                    "topic": "carrier_noise"
+                },
+                {
+                    "oid": "1.3.6.1.4.1.2566.127.1.3.236.23.2.2.1.2.9.0",
+                    "name": "nivel do sinal",
+                    "type": "numeric",
+                    "mask": 1,
+                    "description": "Indica o nivel do sinal da recepção",
+                    "unit": "dBm",
+                    "topic": "nivel_receptor"
+                },
+                {
+                    "oid": "1.3.6.1.4.1.2566.127.1.3.236.26.2.4.3.0",
+                    "name": "temperatura interna",
+                    "type": "numeric",
+                    "mask": 1,
+                    "description": "Indica a temperatura interna do receptor",
+                    "unit": "°C",
+                    "topic": "temperatura_interna"
+                },
+                {
+                    "oid": "1.3.6.1.4.1.2566.127.1.3.236.23.2.1.2.1.1.0",
+                    "name": "status saida ASI 1",
+                    "type": "boolean",
+                    "enum": {
+                        "1": "Not Available",
+                        "2": "Inactive",
+                        "3": "Ok",
+                        "4": "Warning",
+                        "5": "Error"
+                    },
+                    "mask": null,
+                    "description": "Indica o status da saida ASI 1",
+                    "topic": "status_saida_asi_1"
+                },
+                {
+                    "oid": "1.3.6.1.4.1.2566.127.1.3.236.23.2.1.2.2.1.0",
+                    "name": "status saida ASI 2",
+                    "type": "boolean",
+                    "enum": {
+                        "1": "Not Available",
+                        "2": "Inactive",
+                        "3": "Ok",
+                        "4": "Warning",
+                        "5": "Error"
+                    },
+                    "mask": null,
+                    "description": "Indica o status da saida ASI 2",
+                    "topic": "status_saida_asi_2"
+                }
+            ]
+        }
+    ]
+}
